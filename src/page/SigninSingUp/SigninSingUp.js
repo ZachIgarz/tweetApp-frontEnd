@@ -1,5 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faSearch,
+  faUsers,
+  faComment,
+} from "@fortawesome/free-solid-svg-icons";
+
 import whiteLogo from "../../assets/png/whiteLogo.png";
 import blueLogo from "../../assets/png/blueLogo.png";
 import "./SigninSingUp.scss";
@@ -21,10 +30,19 @@ function LeftComponent() {
       <img src={blueLogo} alt="TweetApp"></img>
 
       <div>
-        <h2>- Sigue lo que te interesa (?</h2>
-        <h2>- Enterate de que esta hablando la gente (?</h2>
+        <h2>
+          <FontAwesomeIcon icon={faSearch} />
+          Sigue lo que te interesa.
+        </h2>
+        <h2>
+          <FontAwesomeIcon icon={faUsers} />
+          Enterate de que esta hablando la gente.
+        </h2>
 
-        <h2>- Unete a la conversacion (?</h2>
+        <h2>
+          <FontAwesomeIcon icon={faComment} />
+          Unete a la conversacion.
+        </h2>
       </div>
     </Col>
   );
