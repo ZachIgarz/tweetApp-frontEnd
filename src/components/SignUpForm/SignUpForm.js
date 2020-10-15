@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Row, Col, Form, Button, Spinner } from "react-bootstrap";
-import "./SingUpForm.scss";
+import "./SignUpForm.scss";
 import { values, size } from "lodash";
 import { toast } from "react-toastify";
 import { isEmailValid } from "../../utils/validations";
 import  {signUpApi} from "../../api/auth";
 
-export default function SingUpForm(props) {
+export default function SignUpForm(props) {
   const { setShowModal } = props;
 
   const [formData, setFormData] = useState(inicialFormValue());

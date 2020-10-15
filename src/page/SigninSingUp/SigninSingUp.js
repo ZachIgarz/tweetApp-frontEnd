@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import BasicModal from "../../components/Modal/BasicModal";
-import SingUpForm from "../../components/SingUpForm";
+import SignUpForm from "../../components/SignUpForm";
 
 import whiteLogo from "../../assets/png/whiteLogo.png";
 import blueLogo from "../../assets/png/blueLogo.png";
@@ -77,7 +77,7 @@ function RightComponent(props) {
 
         <Button
           variant="primary"
-          onClick={() => openModal(<SingUpForm setShowModal={setShowModal} />)}
+          onClick={() => openModal(<SignUpForm setShowModal={setShowModal} />)}
         >
           Registrate
         </Button>
